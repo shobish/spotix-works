@@ -35,6 +35,11 @@ html{
 	color: #A6ADB4;
 	width: 75%;
 }
+.text-muted{
+	color: #A6ADB4;
+	opacity: 0.5;
+
+}
 .nav-link{
 
 	color: #343638;
@@ -46,4 +51,20 @@ html{
 }
 .boxes{
 	padding: 0 75px;	
+}
+.subtext{
+	position:absolute;
+	
+	
+	color: white;
+	padding-left:30px;
+
+}
+.subtext-bi{
+	color: white;
+	opacity: 1;
+}
+.col-happening{
+	width: 75%;
+
 }
