@@ -1,0 +1,49 @@
+@font-face{
+	font-family:do;
+	src: url("font/Helvitica.ttf");
+}
+html{
+ 
+ font-family: 'do';
+}
+.navbar-image{
+	max-height: 50px;
+	max-width: 50px;s
+	border-radius: 50%;
+}
+.text-area{
+	font-family: "do";
+	text-align: left;
+	margin-top: 30px;
+	margin-right:50px;
+	padding: 10px 15px;
+	margin-left: 50px;
+	font-size: 16px;
+}
+.navbar-toggler{
+	position: absolute;
+}
+.abc{
+	/*position: relative;*/
+	/*max-width: 50%;*/
+	width: 100%;
+}
+.navbar-brand,.text-area h5{
+	color: #FA6980;
+}
+.text-area p{
+	color: #A6ADB4;
+	width: 75%;
+}
+.nav-link{
+
+	color: #343638;
+	opacity: 0.5;
+}
+.home{
+	color:black;
+	opacity: 1;
+}
+.boxes{
+	padding: 0 75px;	
+}
