@@ -68,3 +68,13 @@ html{
 	width: 75%;
 
 }
+.social ul{
+	list-style: none;
+}
+.email-button{
+	position: absolute;
+	margin-right: 100px;
+	margin-top: -33px;
+	margin-left: 160px;
+
+}
