@@ -2,14 +2,23 @@
 	font-family:do;
 	src: url("font/Helvitica.ttf");
 }
+@font-face{
+	font-family:boldone;
+	src: url("font/helvetica-Bold.ttf");
+}
 html{
  
  font-family: 'do';
 }
 .navbar-image{
 	max-height: 50px;
-	max-width: 50px;s
+	max-width: 50px;
 	border-radius: 50%;
+}
+#navmenu{
+ font-family: "do";
+ font-weight: bold;
+ font-size: ;
 }
 .text-area{
 	font-family: "do";
@@ -20,14 +29,8 @@ html{
 	margin-left: 50px;
 	font-size: 16px;
 }
-.navbar-toggler{
-	position: absolute;
-}
-.abc{
-	/*position: relative;*/
-	/*max-width: 50%;*/
-	width: 100%;
-}
+
+
 .navbar-brand,.text-area h5{
 	color: #FA6980;
 }
@@ -71,10 +74,15 @@ html{
 .social ul{
 	list-style: none;
 }
+.social{
+	margin-left:75px ;
+}
 .email-button{
-	position: absolute;
+	position: ;
 	margin-right: 100px;
 	margin-top: -33px;
-	margin-left: 160px;
+	float: right;
+	margin-left: 270px;
+
 
 }
