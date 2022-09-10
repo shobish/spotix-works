@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index </title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="public/style.css ">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white ">
+    <nav class=" p-5 bg-blue-100 shadow bg-zinc-50 sm:flex sm:items-center sm:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="text 2xl font-[Helvetica-Bold] cursor-pointer">
+                <h1 class="text-xl text-red-400">LOGO</h1>
+            </span>
+            <span class="sm:hidden ">
+            <ion-icon name="menu" onclick="menu(this)"></ion-icon>            
+            </span>
+        </div>
+
+        <ul class="sm:flex sm:items-center sm:justify-center sm-5 gap-5 z-[-1] 
+                sm:z-auto sm:static absolute sm:opacity-100 opacity-0 transition-all ease-in-out duration-600 text-gray-500">
+            <li class="my-6 sm:my-0">
+                <a href="#" class="text-xl hover:text-gray-200 active:bg-red-700" >Home</a>
+            </li>
+
+            <li class="my-6 sm:my-0">
+                <a href="#" class="text-xl hover:text-gray-200">Discovery</a>
+            </li>
+
+            <li class="my-6 sm:my-0">
+                <a href="#" class="text-xl hover:text-gray-200">Photos</a>
+            </li>
+
+            <li class="my-6 sm:my-0">
+                <a href="#" class="text-xl hover:text-gray-200">Contact</a>
+            </li> 
+
+            <img class="h-8 rounded-full" src="images/logo.jpg" />  
+        
+        </ul>
+    </nav>
+
+<!-- body part -->
+
+
+<section class="bg-white text-center sm:py-7 px-5 ">
+   
+        <div class="sm:flex firstbox bg-cover" >
+             <div class="image-box flex  scale-100 sm:bg-no-repeat sm:bg-contain sm:w-9/12 " style="background-image: url(images/6956868-green-mountain-landscape.jpg);  background-size: cover;" height:100%; >
+                <div class="sm:flex" >
+                    <div class=" text-start my-36 text-white">
+                        <h2 class="text-start px-36 text-4xl">World News</h2>
+                        <span class="underline my-4"></span>
+                        <h4 class="px-5 px-36 text-2xl">Amazing Places to Visit in America</h4>
+                            <p class="text-white px-36"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s</p>
+                            <button class="px-36">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-start sm:w-3/5 sm:px-30 sm:mr-24 sm:pr-24 sm:pl-24" style=" ">
+                <h2 class="text-4xl ">MORE NEWS </h2>                
+                <hr >
+                <div>
+                    <h5 class="text-xl mt-5 text-red-400">TRAVEL</h5>
+                    <h6 class="text-md  font-semibold mt-3">Article title</h6>
+                    <p class="text-start mt-2 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="card-text">
+                            <small class="text-muted mt-4 text-gray-400"><i class="bi bi-clock"></i>    2 mins ago
+                            </small>
+                        </p>
+                    <br>
+                    <h5 class="text-xl mt-5 text-red-400">TECHNOLOGY</h5>
+                    <h6 class="text-lg mt-3 font-semibold">Article title</h6>
+                    <p class="text-start mt-2 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="card-text">
+                            <small class="text-muted mt-4 text-gray-400"><i class="bi bi-clock"></i>    2 mins ago
+                            </small>
+                        </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    
+</section>
+<!-- Boxes -->
+<section class=" px-5 bg-zinc-50  ">
+    <div class="container boxes">
+        <div class="headline">
+            <h3 class="text-4xl pl-6">TRENDING</h3>
+            
+        </div>
+        <br>
+        <div class="row text-center sm:flex gap-7  px-5 mb-5">
+
+            <div class="border-2 rounded-lg  style="border-bottom-right-radius: 5;>
+                <div class=" mb-3">
+                      <img src="images/Imagetg@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-lg font-semibold">Dolore maga aliqua</h5>
+
+                        <p class="card-text">This is a wider    card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="  mt-4 text-gray-400"><i class="bi bi-clock"></i>  Last updated  3 mins ago
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-2 rounded-lg">
+                <div class="card mb-3">
+                      <img src="images/annie-spratt-216507-unsplash@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-lg font-semibold">Morbi eleifend a libero</h5>
+
+                        <p class="card-text">This is a wider    card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted text-gray-400"><i class=" mt-4 text-gray-400 bi bi-clock"></i>  Last updated  3 mins ago
+                            </small>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="border-2 rounded-lg">
+                <div class="card mb-3">
+                      <img src="images/carlos-hevia-628890-unsplash@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-lg font-semibold">Morbi eleifend a libero</h5>
+
+                        <p class="card-text">This is a wider    card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="mt-4 text-gray-400"><i class="bi bi-clock  mt-4 "></i>  Last updated  3 mins ago 
+                            </small>
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>        
+    </div>
+</section>    
+<!-- happening now -->
+<section class="p-3 bg-light pt-5  ">
+    <div class="container boxes ">
+        
+        <div class="headline">
+            <h3 class="text-4xl pl-6">HAPPENING NOW</h3>            
+        </div>
+        <br>
+        <div class="row  sm:flex">
+            <div class="p-6 " style=" color: white;">
+                <div class="card  ">
+                      
+                      <div class=" sm:subtext justify-center place-items-start" style="position: absolute; color: white; margin-left: 50px; ">
+                        <h4 class="tophead font-semibold text-4xl pt-5" >CITY</h4>
+
+                          <h4 class="font-bold text-2xl text-box sm:pt-96">Large article title</h4>
+                          <p class="font-bold pt-3">Lorem Ipsum is simply dummy text of the printing</p>
+                           <p class="card-text">
+                                <small class="text-muted text-gray-400 text-base pt-5"> <i class="bi bi-clock"></i>  Last updated  3 mins ago 
+                                </small>
+                            </p>
+                      </div> 
+                      <div class="h-max">
+                      <img src="images/Image@GGFGF2x.png" class="card-img-top" style="height: 100%;" alt="..."> 
+                      </div>
+                </div>
+                <br>
+                <br>
+                <div class="card ">
+                      
+                      <div class=" subtext justify-center place-items-start" style="position: absolute;margin-left: 50px; ">
+                        <h4 class="tophead font-semibold text-4xl pt-6" >TRAVEL</h4>
+
+                          <h4 class=" font-bold text-lg  sm:pt-96 ">Large article title</h4>
+                          <p class="font-bold pt-3">Lorem Ipsum is simply dummy text of the printing</p>
+                           <p class="card-text">
+                                <small class=" text-gray-400 text-base pt-5"> <i class="bi bi-clock"></i>  Last updated  3 mins ago 
+                                </small>
+                            </p>
+                      </div> 
+                      <img src="images/Image@2x.png" class="card-img-top" alt="..."> 
+                </div>
+
+            </div>
+
+
+            <div class="my-6 grid gap-6 p-5 ">
+                <div class="card border-2 rounded-lg ">
+                      <img src="images/161975_1024x768@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body text-lg   pl-5 pt-5">
+                             <h5 class="card-title text-lg font-medium ">Card title</h5>
+
+                             <p class="card-text pt-5">
+                            <small class="text-gray-400 text-base pt-5"><i class="bi bi-clock"></i>  4h ago by willam 
+                            </small>
+                        </p>
+                        </div>     
+                </div>
+                
+                    <div class="card border-2 rounded-lg" >
+                      <img src="images/roberto-nickson-g-744100-unsplash@2x.png" class="card-img-top" alt="...">
+                      
+                        <div class="card-body text-lg   pl-5 pt-5">
+                             <h5 class="card-title text-lg font-medium ">Card title</h5>
+
+                             <p class="card-text pt-5">
+                            <small class="text-gray-400 text-base pt-5"><i class="bi bi-clock"></i>  4h ago by willam 
+                            </small>
+                        </p>
+                        </div>   
+                    </div>
+              
+                
+                    <div class="card border-2 rounded-lg" >
+                      <img src="images/tom-mussak-108425-unsplash@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body text-lg   pl-5 pt-5">
+                             <h5 class="card-title text-lg font-medium ">Card title</h5>
+
+                             <p class="card-text pt-5">
+                            <small class="text-gray-400 text-base pt-5"><i class="bi bi-clock"></i>  4h ago by willam 
+                            </small>
+                        </p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+
+<footer class=" invisible sm:visible bg-gray-500 text-center pt-6   px-8 h-48">
+            <div class="container text-center  ">
+                <div class="row text-center flex justify-between">
+                  <div class="gap-5 flex mt-3 n" >
+
+                    <div class="text-uppercase ">
+                        <h5 class="text-uppercase mb-4  font-weight-bold text-white">LOGO</h5>
+
+                    </div>
+                    <div class="px-30 space-x-14 justify-items-center flex gap-10 px-28">
+                    <div class="  text-start ">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Home</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Discovery</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Photos</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Contact</a>
+                        </p>
+                    </div>
+                    <div class=" text-start ">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">About</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Help</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Terms</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Guidlines</a>
+                        </p>
+                    </div>
+                    <div class=" text-start ">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Testimonicals</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Advertise</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Intagration</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Careers</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    </div>   
+                    <div class=" text-start ">
+                        <form>
+                            <div class="form-control h-6 pt-5">
+                                
+                                <button class=" bg-white " type="button" id="button-addon1">
+                                    <input type="text" class="form-control border-0 py-2 w-72 h-11" placeholder=""
+                                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <i class="bi bi-send-fill mr-3"></i>
+                                </button>
+                            </div>
+                            <div class="form-text text-white mt-10">stay in touch with us for the freshest products.</div>
+                           
+                        </form>
+                    </div>
+                    <div class=" text-start  social pt-5 pr-5 ">
+                        <ul class="flex" style="text-decoration:none">
+                            <li class="px-2"><a href="#"><i class="text-white bi bi-instagram"></i></a>
+                            </li>
+                            <li class="px-2"><a href="#"><i class="text-white bi bi-twitter"></i></a></li>
+                            <li class="px-2"><a href="#"><i class="text-white bi bi-facebook"></i></a></li>
+                            <li class="px-2"> <a href="#"><i class="text-white bi bi-browser-firefox"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<script >
+
+function menu(e) {
+    let list= document.querySelector('ul');
+    e.name==='menu' ? (e.name='menu', 
+list classList.add('top-[80px]'), list.classList.add('opacity-100')) :(e.name="menu",list classList.add('top-[80px]'),list.classList.add('opacity-100'))
+    // body...
+}
+    
+
+</script>
+</body>
+</html>  

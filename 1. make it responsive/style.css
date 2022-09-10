@@ -1,25 +1,51 @@
 @font-face{
-	font-family:do;
+	font-family:"do";
 	src: url("font/Helvitica.ttf");
 }
 @font-face{
 	font-family:boldone;
 	src: url("font/helvetica-Bold.ttf");
 }
-html{
- 
+html{ 
  font-family: 'do';
 }
 .navbar-image{
 	max-height: 50px;
 	max-width: 50px;
 	border-radius: 50%;
+	
 }
 #navmenu{
- font-family: "do";
+ font-family: "boldone";
  font-weight: bold;
- font-size: ;
+ 
+ 
 }
+
+.navdiv{
+	float: right;
+
+}
+.image-box {
+	background-image: url('./images/6956868-green-mountain-landscape.jpg');
+	background-size: cover;
+}
+.navbar-brand,
+.text-area h5 {
+	color: #FA6980;
+}
+.btn-pink {
+	background-color: rgb(250, 105, 128);
+	border-color: rgb(250, 105, 128);
+	color: rgb(255, 255, 255);
+	font-size: 13px;
+}
+.underline {
+	display: block;
+	border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+
 .text-area{
 	font-family: "do";
 	text-align: left;
@@ -29,6 +55,7 @@ html{
 	margin-left: 50px;
 	font-size: 16px;
 }
+
 
 
 .navbar-brand,.text-area h5{
@@ -55,13 +82,19 @@ html{
 .boxes{
 	padding: 0 75px;	
 }
-.subtext{
+.subtext{		
 	position:absolute;
-	
-	
 	color: white;
 	padding-left:30px;
-
+	opacity: 1;
+	color: white;
+}
+.text-box{
+	margin-top: 250px;
+}
+.tophead{
+	top: 30px;
+	position: absolute;
 }
 .subtext-bi{
 	color: white;

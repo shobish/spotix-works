@@ -13,62 +13,71 @@
 
 </head>
 <body>
-   <!-- top nav -->
+<!-- top nav -->
+<div class="container">
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">LOGO</a>
+                <div class="collapse navbar-collapse navdiv " id="navbarNavDropdown">
+                    <ul class="navbar-nav" >
+                        <li>
+                            <a href="#" class="nav-link active">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">DISCOVERY</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">PHOTOS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>  
+                <div>
+                    <img src="images/logo.jpg" class="navbar-image md-auto  ">
+                </div>
+                
+            </div>
 
-    <div class="container">
-   <nav class="navbar navbar-expand-lg bg-light ">
-   
-        <a href="#" class="navbar-brand  ">LOGO</a>
-
-        <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse"
-        data-bs-target="#navmenu">
-            
-
-        <span class="navbar-toggler-icon bg-white"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu" >
-            <ul class="navbar-nav ms-auto d-flex">
-                <li>
-                    <a href="#" class="nav-link active home">HOME</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">DISCOVERY</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">PHOTOS</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">CONTACT</a>
-                </li>
-            </ul>
-            
-            
-        </div>        
-        <img src="images/logo.jpg" class="navbar-image md-auto d-flex">
-    </div>       
-   </nav>
+        </nav>
+    </div>
+</div>     
 
 <!-- body area -->
 
 <section class="bg-white text-center">
     <div class="container">
         <div class="d-md-flex firstbox">
-            <div class="abc">
-                <img  class="img-fluid" width="100%" src="images/bodyfirst.png" />
-                
+             <div class="image-box d-flex col-sm-12 h-5 col-md-7">
+                <div class="d-flex align-items-center">
+                    <div class="container-fluid col-md-8 col-12  text-start text-white">
+                        <h2 class="text-uppercase">World News</h2>
+                        <span class="underline my-4"></span>
+                        <h4 class="">Amazing Places to Visit in America</h4>
+                            <p class="text-white"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s</p>
+                            <button class="btn btn-pink py-2 mt-2 bg-pink ">Learn More</button>
+                    </div>
+                </div>
             </div>
             <div class="text-area container-sm-fluid ">
-                <h2 text-center>MORE NEWS</h2>                
+                <h2 class="text-center mt-0">MORE NEWS </h2>                
                 <hr >
                 <div>
                     <h5>TRAVEL</h5>
                     <h6>Article title</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     <p class="card-text">
-                            <small class="text-muted"><i class="bi bi-clock"></i>    2 mins ago
+                            <small class="text-secondary"><i class="bi bi-clock text-white"></i>    2 mins ago
                             </small>
                         </p>
                     <br>
@@ -147,8 +156,9 @@
     </div>
 </section>
 
-<section class="p-3 bg-light ">
+<section class="p-3 bg-light container-fluid max-auto ">
     <div class="container boxes">
+        <div>
         <div class="headline">
             <h3>HAPPENING NOW</h3>            
         </div>
@@ -158,9 +168,9 @@
                 <div class="card ">
                       <img src="images/Image@GGFGF2x.png" class="card-img-top" alt="...">
                       <div class="container subtext">
-                        <h4>CITY</h4>
+                        <h4 class="tophead" >CITY</h4>
 
-                          <h4 class="font-weight-bold">Large article title</h4>
+                          <h4 class="font-weight-bold text-box pt-5">Large article title</h4>
                           <p class="font-weight-bold">Lorem Ipsum is simply dummy text of the printing</p>
                            <p class="card-text">
                                 <small class="text-muted"> <i class="bi bi-clock"></i>  Last updated  3 mins ago 
@@ -172,12 +182,12 @@
                 <br>
                 <div class="card align-items-center">
                       <img src="images/Image@2x.png" class="card-img-top image-fluid" alt="...">
-                      <div class="container subtext  font-weight-bold">
-                        <h4>TRAVEL</h4>
-                          <h4 class="font-weight-bold">Large article title</h4>
+                      <div class="container   font-weight-bold subtext">
+                        <h4 class="tophead text-white">TRAVEL</h4>
+                          <h4 class="font-weight-bold text-box pt-5 ">Large article title</h4>
                           <p class="font-weight-bold">Lorem Ipsum is simply dummy text of the printing</p>
                            <p class="card-text">
-                                <small class="text-muted"><i class="bi bi-clock bg-light"></i>  Last updated  3 mins ago 
+                                <small class="text-muted"> <i class="bi bi-clock"></i>  Last updated  3 mins ago 
                                 </small>
                             </p>
                         </div>
@@ -229,97 +239,86 @@
 
 <!-- footer -->
 
-<div class="bg-secondary text-center pt-5 pb-4 mt-5 d-sm-none d-md-block ">
-    <div class="container text-center">
-        <div class="row text-center ">
+<footer class="bg-secondary text-center pt-5 pb-4 mt-5 d-none d-md-block ">
+            <div class="container text-center">
+                <div class="row text-center ">
 
-            <div class="col-md-3 col-lg-2 col-xl-2 text-upperCase">
-                <h5 class="text-upperCase mb-4 mt-3 font-weight-bold text-white"> LOGO</h5>              
-                
+                    <div class="col-md-3 col-lg-2 col-xl-2 text-uppercase">
+                        <h5 class="text-uppercase mb-4 mt-3 font-weight-bold text-white">LOGO</h5>
+
+                    </div>
+                    <div class="col-md-3 col-lg-1 col-xl-1 mt-3 text-start">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Home</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Discovery</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Photos</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Contact</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-1 col-xl-1 mt-3 text-start ">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">About</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Help</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Terms</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Guidlines</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mt-3 text-start ">
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Testimonicals</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Advertise</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Intagration</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none">Careers</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-3 mt-4 text-start ">
+                        <form>
+                            <div class="form-control input-group">
+                                <input type="text" class="form-control border-0 py-2" placeholder=""
+                                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <button class="btn btn-outline-secondary link-secondary border-0 bg-white" type="button"
+                                    id="button-addon1">
+                                    <i class="bi bi-send-fill"></i>
+                                </button>
+                            </div>
+                            <div class="form-text text-white">stay in touch with us for the freshest
+                                products.</div>
+                            <!-- <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <button class="email-button" type="submit"><i class="bi bi-send-fill text-gray"></i></button>
+                            <div id="emailHelp" class="form-text text-white">stay in touch with us for the freshest
+                                products.</div> -->
+                        </form>
+                    </div>
+                    <div class=" col-lg-1  mt-3 text-start d-grid social ">
+                        <ul class="d-flex flex-row" style="text-decoration:none">
+                            <li class="px-2"><a href="#"><i class="text-white bi bi-instagram"></i></a>
+                            </li>
+                            <li class="px-2"><a href="#"><i class="text-white bi bi-twitter"></i></a></li>
+                            <li class="px-2"><a href="#"><i class="text-white bi bi-facebook"></i></a></li>
+                            <li class="px-2"> <a href="#"><i class="text-white bi bi-browser-firefox"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 col-lg-1 col-xl-1 mt-3 text-start">
-                <p>
-                    <a href="#" class="text-white " style="text-decoration: none;">Home</a>             
-                </p>
-
-                <p>
-                    <a href="#" class="text-white "style="text-decoration: none;">Discovery</a>                    
-                </p>
-
-                <p>
-                    <a href="#" class="text-white"style="text-decoration: none;">Photos</a>                    
-                </p>
-                <p>
-
-                    <a href="#" class="text-white "style="text-decoration: none;">Contact</a>                    
-                </p>
-                          
-                
-            </div>
-            <div class="col-md-3 col-lg-1 col-xl-1 mt-3 text-start ">
-                <p>
-                    <a href="#" class="text-white " style="text-decoration: none;">About</a>             
-                </p>
-                <p>
-                    <a href="#" class="text-white "style="text-decoration: none;">Help</a>                    
-                </p>
-                <p>
-                    <a href="#" class="text-white"style="text-decoration: none;">Terms</a>                    
-                </p>
-                <p>
-                    <a href="#" class="text-white "style="text-decoration: none;">Guidlines</a>                    
-                </p>
-                          
-                
-            </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mt-3 text-start ">
-                <p>
-                    <a href="#" class="text-white " style="text-decoration: none;">Testimonicals</a>             
-                </p>
-                <p>
-                    <a href="#" class="text-white "style="text-decoration: none;">Advertise</a>                    
-                </p>
-                <p>
-                    <a href="#" class="text-white"style="text-decoration: none;">Intagration</a>                    
-                </p>
-                <p>
-                    <a href="#" class="text-white "style="text-decoration: none;">Careers</a>                    
-                </p>      
-                          
-                
-            </div>
-
-          
-            <div class="col-md-3 col-lg-2 col-xl-3 mt-4 text-start ">
-                    <form>
-                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <button class="email-button" type="submit"><i class="bi bi-send-fill text-gray"></i></button>
-                    <div id="emailHelp" class="form-text text-white">stay in touch with us for the freshest products.</div>
-                    </form>    
-            </div>
-            <div class=" col-lg-1  mt-3 text-start d-grid social ">
-                <ul class="d-flex flex-row" style="text-decoration:none">
-                    <li class="px-2" ><a href="#" ><i class="text-white bi bi-instagram"></i></a>
-                    </li>
-                    <li class="px-2"><a href="#"><i class="text-white bi bi-twitter"></i></a></li>
-                    <li class="px-2"><a href="#"><i class="text-white bi bi-facebook"></i></a></li>                   
-                    <li class="px-2"> <a href="#"><i class="text-white bi bi-browser-firefox"></i></a></li>
-                </ul>
-
-
-            </div>
-                
-
-            
-        </div>
-        
-        
-    </div>
-    
-    
-
-
-</div>
+        </footer>
     
     
 
