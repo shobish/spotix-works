@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-
+const verifyToken = require("./middleware/auth");
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const mongoose = require ('mongoose');
@@ -17,12 +17,11 @@ mongoose.connect(DB,params).then( ()=> console.log("connect")).catch((err)=> con
 
 
 app.use(express.json());
-
+//app.use(verifyToken);
 // importing user context
 const User = require("./model/user");
 
-const auth = require("./middleware/auth");
-const verifyToken = require("./middleware/auth");
+
 
 
  
@@ -106,31 +105,42 @@ app.post("/login", async (req, res) => {
       // user
       res.status(200).json(user);
     }
-    res.status(400).send("Invalid Credentials");
+    
   } catch (err) {
+    res.status(400).send("Invalid Credentials");
     console.log(err);
   }
   // Our register logic ends here
 });
-app.get("/jwt", verifyToken,async (req, res) => {
-  try {
-    // Get user input
-    const token= req.headers['x-access-token'];
+// app.get("/jwt", async (req, res) => {
+//   //try {
+//     // Get user input
+//     //const token= req.headers['x-access-token'];
     
-    const userdata = jwt.verify(token,process.env.TOKEN_KEY);
-    const email = userdata.email;
-    const user = await User.findOne({ email });
+//     //const userdata = jwt.verify(token,process.env.TOKEN_KEY);
+//     //const email = userdata.email;
+//    // const user = await User.findOne({ email });
 
-    if (token==null) {
-      res.status(400).send("Token required");
-    }
-    else {  // user
-  res.status(200).send(user); 
-   }   
-      } catch (err) {
-    console.log(err);
-  } 
+//    // if (token==null) {
+//     //  res.status(400).send("Token required");
+//   //  }
+//   //  else {  // user
+//  // res.status(200).send(user); 
+//    //}   
+//    //   } catch (err) {
+//     console.log(err);
+//   } 
+// });
+
+app.get("/jwt",verifyToken,(req, res) => {
+
+ 
+  console.log(req.user);
+  res.json({message:req.user});
 });
+
+
+
 
 
 app.listen(3001)
