@@ -1,0 +1,23 @@
+.App{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.read{
+    margin-top: 30px;
+}
+label ,button{
+    margin: 5px;
+}
+.food{
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid violet;
+    border-bottom: 20px;
+}
