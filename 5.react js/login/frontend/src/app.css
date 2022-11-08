@@ -12,12 +12,29 @@
 }
 label ,button{
     margin: 5px;
+    
+}
+input{
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: ce;
 }
 .food{
-    margin-top: 20px;
-    width: 300px;
-    height: 150px;
-    border-radius: 5px;
-    border: 2px solid violet;
+    margin-top: 20px;       
+    border-radius: 5px;    
     border-bottom: 20px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.food.button{
+    background-color: red;
+}
+h2{
+    margin: 5px;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(110, 99, 99);
 }

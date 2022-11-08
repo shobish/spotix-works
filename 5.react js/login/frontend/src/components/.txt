@@ -1,0 +1,172 @@
+mongoose.connect('mongodb+srv://shobish:Shobish1234@cluster0.qail2gv.mongodb.net/login',
+  {
+    useNewUrlParser: true
+    
+  });
+
+
+
+ //inserted data will added to database 
+app.post('/',async (req,res)=>{
+  
+  const foodName=req.body.foodName
+  const Days=req.body.Days
+
+  const food=new foodModel({foodName:foodName, Days: Days})
+  console.log(food);
+
+  try{
+    await food.save()
+    res.send('inserted')
+  }catch(err){
+    console.log(err);
+    }
+
+})
+
+// To show the data from the database
+
+app.get('/read',(req,res)=>{
+  foodModel.find({},(err,data)=>{
+    if(err){
+      console.log(err);
+    }else{
+      res.send(data)
+    }
+  })
+  
+})
+
+//this will update the data
+app.put('/update',async (req,res)=>{
+  const updateName=req.body.updateName
+  const id=req.body.id 
+
+  try{
+    await foodModel.findById(id,(err,updateList)=> {
+      updateList.foodName=updateName
+      updateList.save()
+      res.send('update')
+    })
+    
+  }catch(err){
+    console.log(err);
+    }
+
+})
+//this will delete the data
+app.delete('/delete/:id',async (req,res)=>{
+
+  const id=req.params.id
+
+await foodModel.findByIdAndDelete(id).exec()
+res.send('deleted')
+
+
+})
+
+
+
+
+
+
+
+
+const mongoose =require ("mongoose")
+
+const foodSchema=new mongoose.Schema({
+    foodName:{
+        type:'string',
+        required:'true'
+    },
+    Days:{
+        type:'number',
+        required:'true'
+    }
+})
+const foodModel=mongoose.model('login',foodSchema)
+
+module.exports=foodModel;
+
+
+
+ const [foodName, setFood] = useState("");
+   const [updateName, setUpdate]=useState("")
+   const [Days, setDay] = useState(0);
+   const [foodList, setList]=useState([]) 
+   const [openDelete, setDelete]=useState(false)
+   const [openUpdateButton, setUpdatebutton]=useState(false)
+   
+
+   useEffect(()=>{
+    Axios.get('http://localhost:3001/read').then((res)=>{
+      setList(res.data)
+    })
+   },[])
+
+
+//function for update
+const updateList=(id)=>{
+  Axios.put("http://localhost:3001/update",{
+    id:id,
+    updateName:updateName,
+  
+ 
+ })
+} 
+//function for delete
+const deleteList=(id)=>{
+  Axios.delete(`http://localhost:3001/delete/${id}`)
+} 
+  return (
+    <div className="App">
+      <Login/>
+
+<div className='read'>
+  <h1>Added List</h1>
+    {foodList.map((res ,index)=>{      
+
+          return(
+
+        <div key={index} className="food">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Days</th>
+                <th scope="col">UpdateName</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+               <tbody>
+                  <tr>
+                    <th scope="row">{res.foodName}</th>
+                    <td>{res.Days}</td>
+                    
+                    <td><button  onClick={()=>{setUpdatebutton(true)}} className="btn btn-info" >update</button></td>
+              
+                    <td><button onClick={()=>deleteList(res._id)}
+                      className="btn btn-danger">delete</button></td>                        
+                  </tr>                      
+                </tbody> 
+          </table>   
+            
+        </div>
+        )
+      })
+    }
+        
+  </div>
+
+
+</div> 
+
+    
+
+  )
+}
+
+
+//onClick={() => {deleteList(res._id)
+  //console.log('deleted')
+ //}}   
