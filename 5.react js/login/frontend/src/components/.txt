@@ -170,3 +170,10 @@ const deleteList=(id)=>{
 //onClick={() => {deleteList(res._id)
   //console.log('deleted')
  //}}   
+
+
+
+
+
+
+

@@ -5,14 +5,11 @@ const NameSchema= new mongoose.Schema({
         type:'string',
         required:'true'
     },
-    age:{
+    order:{
         type:'number',
         required:'true'
-    },
-    place:{
-        type:'string',
-        required:'true'
     }
+ 
 })
 
 const SchemaModel=mongoose.model('login', NameSchema)
