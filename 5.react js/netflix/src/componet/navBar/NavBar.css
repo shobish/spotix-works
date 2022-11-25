@@ -1,22 +1,24 @@
 .NavBar{
     position: fixed;
-    top: 0;
+    background-color: #111;
+    height: 40px; 
     width: 100%;
-    height: 30px;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color:#111;
-
+    padding: 2px;
+    
 }
 .logo{
     position: fixed;
     left: 20px;
+    margin-top: 2px;
     width: 80px;
+  
 
 }
 .avatar{
     position: fixed;
     right: 20px;
     width: 30px;
+
 }

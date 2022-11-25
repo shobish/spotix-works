@@ -1,19 +1,36 @@
 import React from 'react'
+import {useEffect,useState  } from "react";
+import {  BaseUrl,API_KEY,ImageUrl} from "../../constant/Base";
 import './Banner.css'
-
+import axios from '../../constant/Axios'
+import {action,originals} from '../../constant/Urls'
 function Banner() {
-  return (
-    <div className='banner'>
-        <div className='content'>
-            <h1 className='title'>Movie name</h1>
-              <div className='bannerButtons'>
-                  <button className='button'>play</button>
-                  <button className='button'>My list</button>
-              </div>  
-              <h1 className='discription'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</h1>  
 
+  const [Movie, setMovie] = useState()
+
+useEffect(()=>{
+  axios.get(originals).then((e)=>{    
+    setMovie(e.data.results[4])
+  })
+
+},[])
+  return (
+
+    <div className='Banner' style={{backgroundImage:`url(${ Movie ? ImageUrl+Movie.backdrop_path : ""  })`}}>
+      
+        <div className="wrapper">
+            <h1 className="text">{Movie ? Movie.name:""}</h1>    
+            <div className="Buttons">
+                <button className="play">Play</button>
+                <button className="list">My List</button>
+            </div>
+            <div className="dis">
+                <h4 className="distext">{Movie ? Movie.overview :""}</h4>
+            </div>
         </div>
-        <div className='fade'></div>
+        <div className="fade"></div>
+
+
     </div>
   )
 }
